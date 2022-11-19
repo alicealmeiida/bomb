@@ -1,0 +1,83 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: antiquewhite;
+}
+
+article {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    animation: break 7s ease-in-out forwards;     
+}
+
+h1{
+    font-size: 3cm;
+    color: red;
+}
+
+button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: red;
+    border: none;
+    border-radius: 100%;
+    box-shadow: 0 9px #999;
+} 
+
+button:hover {background-color: red}
+  
+button:active {
+    background-color: red;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+#bomb {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    animation-name: bomba;
+    animation-duration: 4s;
+    animation-delay: 4s;
+    animation-iteration-count: 3;
+    background-size: contain;
+    opacity: 0;
+    animation-timing-function: linear;
+    background-image: url("https://tenor.com/view/bomb-joypixels-bombing-explode-blast-gif-17542148");
+}
+
+@keyframes bomba {
+    0% {
+        opacity: 1;
+        left: 0px;
+        top: 0px;
+        background-image: url("https://tenor.com/view/bomb-joypixels-bombing-explode-blast-gif-17542148");
+      }
+    
+      45% {
+        background-image: url("https://tenor.com/view/bomb-joypixels-bombing-explode-blast-gif-17542148");
+      }
+    
+      50% {
+        top: 80vh;
+        opacity: 1;
+        background-image: url("https://tenor.com/view/collision-joypixels-sparks-impact-clash-gif-17542141");
+      }
+    
+      70% {
+        top: 80vh;
+        opacity: 0;
+        background-image: url("https://tenor.com/view/collision-joypixels-sparks-impact-clash-gif-17542141");
+      }
+    
+}
